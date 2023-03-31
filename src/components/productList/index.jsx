@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { API_URL } from "../../shared/urls";
 import { useCart } from "../../hooks/useCart";
 import Product from "../product/index";
-import { Button, Card, Container, Row, Col, CardGroup } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 

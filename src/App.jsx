@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ProductsList from "./components/productList";
-import { API_URL } from "./shared/urls";
-import { Header } from "./components/header";
 import { Layout } from "./components/layout";
 import { Route, Routes } from "react-router-dom";
-import Product from "./components/product";
+
 import { Post } from "./pages/item";
 import CartList from "./pages/cart";
 

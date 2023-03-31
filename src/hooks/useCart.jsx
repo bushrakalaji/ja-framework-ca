@@ -1,5 +1,4 @@
 import { create } from "zustand";
-import { API_URL } from "../shared/urls";
 
 const useCartStore = create((set) => ({
   products: [],

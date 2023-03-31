@@ -1,9 +1,8 @@
 import React from "react";
-import { Button, Card, Container, Row, Col, CardGroup } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import * as S from "./index.style";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { LinkContainer } from "react-router-bootstrap";
-import { Link, Route, useParams } from "react-router-dom";
 
 function Product({
   product: {
