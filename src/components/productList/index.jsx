@@ -8,9 +8,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductsList() {
   const { products, fetchProducts, isLoading, hasError } = useCart();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   useEffect(() => {
     fetchProducts(API_URL);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (isLoading) {
