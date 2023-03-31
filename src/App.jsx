@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ProductsList from "./components/productList";
 import { Layout } from "./components/layout";
 import { Route, Routes } from "react-router-dom";

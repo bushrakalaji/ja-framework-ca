@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { API_URL } from "../../shared/urls";
 import { useCart } from "../../hooks/useCart";
 import Product from "../product/index";
@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductsList() {
   const { products, fetchProducts, isLoading, hasError } = useCart();
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchProducts(API_URL);
   }, []);

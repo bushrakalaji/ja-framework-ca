@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route, Link, useParams } from "react-router-dom";
-import { Button, Card, Container, Row, Col, CardGroup } from "react-bootstrap";
+import { useParams } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 import { API_URL } from "../../shared/urls";
 import { useCart } from "../../hooks/useCart";
