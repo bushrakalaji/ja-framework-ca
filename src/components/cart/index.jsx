@@ -3,7 +3,7 @@ import { useCartStore } from "../../hooks/useCart";
 
 export function CartIcon() {
   const cart = useCartStore((state) => state.cart);
-  console.log(cart);
+
   return (
     <>
       <div className="position-relative">
@@ -23,13 +23,12 @@ export function CartIcon() {
             top: "17px",
             left: "12px",
             width: "25px",
-            height: "22px",
-            backgroundColor: "red",
+            height: "25px",
             textAlign: "center",
             borderRadius: "50%",
-            padding: "0px",
           }}
-          className="position-absolute top-10 start-10"
+          className="position-absolute top-10 start-10
+          text-bg-warning pb-2"
         >
           {cart.length}
         </p>

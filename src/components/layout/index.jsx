@@ -5,10 +5,10 @@ import { Header } from "../header";
 
 export function Layout() {
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <Outlet />
-      <Footer />
+      <Outlet className="container flex-grow-1" />
+      <Footer className="footer" />
     </div>
   );
 }

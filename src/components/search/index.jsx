@@ -34,7 +34,11 @@ function AutoCompleteSearchBar() {
   };
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return (
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    );
   }
 
   if (hasError) {
@@ -42,7 +46,9 @@ function AutoCompleteSearchBar() {
   }
 
   return (
-    <Form style={{ maxWidth: "300px", marginTop: "10px" }}>
+    <Form
+      style={{ maxWidth: "300px", marginTop: "10px", position: "relative" }}
+    >
       <Form.Group controlId="searchQuery">
         <Form.Control
           type="text"
@@ -51,7 +57,7 @@ function AutoCompleteSearchBar() {
           onChange={handleSearchInputChange}
         />
         {searchQuery && (
-          <ListGroup>
+          <ListGroup style={{ zIndex: 1000, position: "absolute" }}>
             {filteredProducts.map((product) => (
               <LinkContainer key={product.id} to={`/post/${product.id}`}>
                 <ListGroup.Item

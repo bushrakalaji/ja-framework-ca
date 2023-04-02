@@ -14,17 +14,17 @@ function ProductsList() {
   }, []);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return (
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    );
   }
 
   if (hasError) {
     return <p>There was an error fetching the products.</p>;
   }
 
-  // const productList = filteredData.length > 0 ? filteredData : products;
-  // console.log(products);
-
-  // return <div>debug me </div>;
   return (
     <Container>
       <Row
