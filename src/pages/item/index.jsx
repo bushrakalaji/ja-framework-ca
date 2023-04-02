@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import { API_URL } from "../../shared/urls";
 import { useCart } from "../../hooks/useCart";
 import * as S from "./index.style";
+import * as Style from "../../components/product/index.style";
 
 export function Post() {
   const [product, setData] = useState();
@@ -35,6 +36,16 @@ export function Post() {
     getData(`${API_URL}/${id}`);
   }, [id]);
 
+  const renderDiscount = () => {
+    if (!product.discountedPrice || product.discountedPrice === product.price) {
+      return null;
+    }
+
+    const discountPercentage =
+      ((product.price - product.discountedPrice) / product.price) * 100;
+    return <div>Discount: {discountPercentage.toFixed(2)}%</div>;
+  };
+
   if (isLoading || !product) {
     return (
       <div class="spinner-border text-primary" role="status">
@@ -46,6 +57,7 @@ export function Post() {
   if (isError) {
     return <div>Error</div>;
   }
+
   return (
     <>
       <div className="d-flex container flex-wrap gap-3 mt-3">
@@ -59,7 +71,17 @@ export function Post() {
         </S.ProductImage>
         <div className="d-flex flex-column align-items-start ">
           <h1>{product.title}</h1>
-          <p>{product.description}</p>{" "}
+          <p>{product.description}</p>
+          {renderDiscount()} {/* Render the discount if it exists */}
+          <Style.PriceComponent>
+            <Style.Price isValid={product.price === product.discountedPrice}>
+              {product.price} NOK
+            </Style.Price>
+            {product.discountedPrice &&
+              product.discountedPrice < product.price && (
+                <div>{product.discountedPrice} NOK</div>
+              )}
+          </Style.PriceComponent>
           <Button variant="outline-primary" onClick={onAddToCartButtonClick}>
             Add to cart
           </Button>

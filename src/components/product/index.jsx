@@ -16,6 +16,14 @@ function Product({
     reviews,
   },
 }) {
+  const renderDiscount = () => {
+    if (!discountedPrice || discountedPrice === price) {
+      return null;
+    }
+
+    const discountPercentage = ((price - discountedPrice) / price) * 100;
+    return <div>Discount: {discountPercentage.toFixed(2)}%</div>;
+  };
   return (
     <Card style={{ width: "15rem" }}>
       <div style={{ marginTop: "10px", height: "200px" }}>
@@ -32,10 +40,12 @@ function Product({
       </div>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
-
+        {renderDiscount()} {/* Render the discount if it exists */}
         <S.PriceComponent>
-          <S.Price isValid={price === discountedPrice}>{price}</S.Price>
-          <div>{discountedPrice < price && discountedPrice}</div>
+          <S.Price isValid={price === discountedPrice}>{price} NOK</S.Price>
+          {discountedPrice && discountedPrice < price && (
+            <div>{discountedPrice} NOK</div>
+          )}
         </S.PriceComponent>
         <LinkContainer to={`/post/${id}`}>
           <Button variant="outline-primary">view</Button>

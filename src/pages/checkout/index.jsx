@@ -17,13 +17,16 @@ function CartList() {
     return (
       <Container className="text-center">
         <h1>Shopping cart</h1>
-        <span>Ooops empty cart</span>{" "}
+        <div>Ooops empty cart</div>{" "}
+        <LinkContainer to="/">
+          <Button>Fill your cart now</Button>
+        </LinkContainer>
       </Container>
     );
   }
   return (
     <Container className="text-center">
-      <div className="d-flex flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center gap-3">
         <h1>Shopping cart</h1>
         {cart.map((id) => {
           const product = products.find(
@@ -37,7 +40,7 @@ function CartList() {
           );
         })}{" "}
       </div>
-      <div className="m-2">Total: {total.toFixed(2)}</div>
+      <div className="m-2">Total: {total.toFixed(2)} NOK</div>
       <div className="d-flex gap-3 justify-content-center">
         <LinkContainer to="/success">
           <Button onClick={clearCart}>Checkout</Button>

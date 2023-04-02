@@ -7,11 +7,11 @@ import { CartIcon } from "../cart";
 
 export function Header() {
   return (
-    <>
-      <Navbar bg="light" variant="light" className="pe-3">
+    <header>
+      <Navbar bg="light" variant="light" className="px-3">
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>eCommy`</Navbar.Brand>
+            <Navbar.Brand>eCommy</Navbar.Brand>
           </LinkContainer>
           <Nav className="me-auto">
             <LinkContainer to="/">
@@ -29,7 +29,7 @@ export function Header() {
           </LinkContainer>
         </Container>
       </Navbar>
-    </>
+    </header>
   );
 }
 Header();
