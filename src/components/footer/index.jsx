@@ -1,7 +1,13 @@
 import React from "react";
 
 export function Footer() {
-  return <div>bushra kalaji 2023</div>;
+  return (
+    <footer className="footer mt-auto py-3 bg-body-tertiary text-center">
+      <div className="container">
+        <span className="text-body-secondary">Copyright 2023</span>
+      </div>
+    </footer>
+  );
 }
 
 Footer();

@@ -3,7 +3,6 @@ import { API_URL } from "../../shared/urls";
 import { useCart } from "../../hooks/useCart";
 import Product from "../product/index";
 import { Container, Row } from "react-bootstrap";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductsList() {
@@ -21,7 +20,10 @@ function ProductsList() {
   if (hasError) {
     return <p>There was an error fetching the products.</p>;
   }
-  console.log(products);
+
+  // const productList = filteredData.length > 0 ? filteredData : products;
+  // console.log(products);
+
   // return <div>debug me </div>;
   return (
     <Container>
