@@ -20,10 +20,10 @@ export function CartIcon() {
         </svg>
         <p
           style={{
-            top: "10px",
-            left: "7px",
-            width: "30px",
-            height: "30px",
+            top: "17px",
+            left: "12px",
+            width: "25px",
+            height: "22px",
             backgroundColor: "red",
             textAlign: "center",
             borderRadius: "50%",

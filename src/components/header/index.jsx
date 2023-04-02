@@ -10,7 +10,9 @@ export function Header() {
     <>
       <Navbar bg="light" variant="light" className="pe-3">
         <Container>
-          <Navbar.Brand href="#home">eCommy`</Navbar.Brand>
+          <LinkContainer to="/">
+            <Navbar.Brand>eCommy`</Navbar.Brand>
+          </LinkContainer>
           <Nav className="me-auto">
             <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>

@@ -51,7 +51,7 @@ function AutoCompleteSearchBar() {
           onChange={handleSearchInputChange}
         />
         {searchQuery && (
-          <ListGroup className="mt-2 z-3">
+          <ListGroup>
             {filteredProducts.map((product) => (
               <LinkContainer key={product.id} to={`/post/${product.id}`}>
                 <ListGroup.Item

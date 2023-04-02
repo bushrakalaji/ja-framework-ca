@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import * as S from "./index.style";
 import { API_URL } from "../../shared/urls";
 import { useCart } from "../../hooks/useCart";
 
@@ -45,12 +44,11 @@ export function Post() {
   }
   return (
     <>
-      <section>
-        <S.ProductTitle>{product.title}</S.ProductTitle>
-        <S.ProductImage src={product.imageUrl} />
-
-        <S.ProductDescription>{product.description}</S.ProductDescription>
-      </section>
+      <h1>{product.title}</h1>
+      <div>
+        <img src={product.imageUrl} alt={product.description} />
+        <p>{product.description}</p>
+      </div>
       <section>
         <h2>Reviews</h2>
         {product.reviews.map((review) => (

@@ -23,21 +23,24 @@ function CartList() {
   return (
     <Container>
       Cart:{" "}
-      {cart.map((id) => {
-        const product = products.find(
-          (currentProduct) => currentProduct.id === id
-        );
+      <div className="d-flex flex-column">
+        {cart.map((id) => {
+          const product = products.find(
+            (currentProduct) => currentProduct.id === id
+          );
 
-        return (
-          <div key={product.id}>
-            <Product product={product} />
-          </div>
-        );
-      })}{" "}
+          return (
+            <div key={product.id}>
+              <Product product={product} />
+            </div>
+          );
+        })}{" "}
+      </div>
       <div>Total: ${total.toFixed(2)}</div>
       <LinkContainer to="/success">
         <Button onClick={clearCart}>Checkout</Button>
       </LinkContainer>
+      <Button onClick={clearCart}>Clear cart</Button>
     </Container>
   );
 }
