@@ -30,7 +30,7 @@ function ProductsList() {
       <Row
         xs={1}
         md={2}
-        className="g-4"
+        className="g-4 d-flex justify-content-center"
         style={{ gap: "1rem", marginTop: "20px" }}
       >
         {products.map((product) => (
