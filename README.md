@@ -24,11 +24,11 @@ The eCom Store offers the following features across its pages:
 
 
 ## Technologies Used
-
-- React
-- React Router
-- Bootstrap 
-- Fetch API to communicate with the API endpoint
+- JavaScript (ES6)
+- React.js (>16)
+- Bootstrap (>5)
+- HTML5
+- SCSS
 
 ## Setup Instructions
 
