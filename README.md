@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# eCommy Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an eCom Store built with React, showcasing a wide range of products available for purchase. Users can browse the products, view individual product details, add items to their cart, and proceed to the checkout process.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+You can access a live demo of the eCommy Store at [eCom Store Demo](https://ecom-my.netlify.app/).
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Homepage: Display a list of all products with a look-ahead search bar for filtering by product name. Clicking on a product takes the user to the individual product page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Individual Product Page: Show detailed information about a single product, including title, description, image, and reviews. Calculate and display any applicable discounts based on the discountedPrice and price properties. Add the product to the cart with the "Add to Cart" button.
 
-### `npm test`
+- Cart Page: List the selected items in the cart, including titles, prices, and quantities. Show the total amount and provide a "Checkout" button to proceed to the checkout process.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Checkout Success Page: Display a success message to the user after a successful checkout. Clear the cart and provide a link to return to the store.
 
-### `npm run build`
+- Contact Page: Include a contact form with fields for full name, subject, email, and body. Perform form validation with requirements for each field. Console log the form data when validation is met.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Layout Component: Use a Layout component that contains a header with a navigation bar and a Cart icon component. The Cart icon displays the current number of items in the cart and acts as a button.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- React Router
+- CSS (styled-components or CSS Modules)
+- Fetch API to communicate with the API endpoint
 
-### `npm run eject`
+## Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository `https://github.com/bushrakalaji/js-framework-ca`. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install the dependencies using `npm install`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Run the application using `npm start`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Access the application in your browser at `http://localhost:3000`.
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The project is deployed on Netlify and can be accessed at [eCom Store](https://ecom-my.netlify.app/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Credits
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was built as a course assignment and utilized the API provided by Noroff. The design and implementation of the eCommy Store were completed by [Bushra kalaji].
