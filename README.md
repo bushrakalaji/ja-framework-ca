@@ -26,7 +26,7 @@ You can access a live demo of the eCommy Store at [eCom Store Demo](https://ecom
 
 - React
 - React Router
-- CSS (styled-components or CSS Modules)
+- Bootstrap 
 - Fetch API to communicate with the API endpoint
 
 ## Setup Instructions
@@ -45,4 +45,4 @@ The project is deployed on Netlify and can be accessed at [eCom Store](https://e
 
 ## Credits
 
-This project was built as a course assignment and utilized the API provided by Noroff. The design and implementation of the eCommy Store were completed by [Bushra kalaji].
+This project was built as a course assignment and utilized the API provided by Noroff. The design and implementation of the eCommy Store were completed by [Bushra kalaji](https://github.com/bushrakalaji).
