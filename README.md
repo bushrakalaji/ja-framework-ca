@@ -1,3 +1,5 @@
+![project screenshots](/src/images/ecommy.png)
+
 # eCommy Store
 
 This is an eCom Store built with React, showcasing a wide range of products available for purchase. Users can browse the products, view individual product details, add items to their cart, and proceed to the checkout process.
@@ -29,7 +31,7 @@ You can access a live demo of the eCommy Store at [eCom Store Demo](https://ecom
 
 ## Setup Instructions
 
-1. Clone the repository `https://github.com/bushrakalaji/js-framework-ca`. 
+1. Clone the repository `https://github.com/bushrakalaji/js-framework-ca`.
 
 2. Install the dependencies using `npm install`.
 
