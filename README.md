@@ -19,6 +19,8 @@ The eCom Store offers the following features across its pages:
 3. **Cart Page**: The cart page allows users to review the items they have added for purchase. It provides a summary of the selected products, including titles, prices, quantities, and a total amount. Users can modify the quantities or remove products from the cart if needed.
 
 4. **Checkout Success Page**: After successfully completing the checkout process, users are redirected to the checkout success page. This page confirms the order and displays a success message. Users can find relevant order details and a summary of the purchased products.
+5. **Automated Search Bar**: The homepage includes a look-ahead search bar that provides automated filtering of products as users type in a product name. This allows users to quickly search and find specific products of interest.
+
 
 
 
