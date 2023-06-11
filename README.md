@@ -10,17 +10,18 @@ You can access a live demo of the eCommy Store at [eCom Store Demo](https://ecom
 
 ## Features
 
-- Homepage: Display a list of all products with a look-ahead search bar for filtering by product name. Clicking on a product takes the user to the individual product page.
+The eCom Store offers the following features across its pages:
 
-- Individual Product Page: Show detailed information about a single product, including title, description, image, and reviews. Calculate and display any applicable discounts based on the discountedPrice and price properties. Add the product to the cart with the "Add to Cart" button.
+1. **Homepage**: The homepage displays a list of products available for purchase. Users can easily browse through the product catalog and explore different items.
 
-- Cart Page: List the selected items in the cart, including titles, prices, and quantities. Show the total amount and provide a "Checkout" button to proceed to the checkout process.
+2. **Individual Product Page**: Each product has its own dedicated page that provides detailed information about the item. Users can view the product's title, description, pricing, and any available discounts. They can also see product images and customer reviews, if available. An "Add to Cart" button allows users to add the product to their cart.
 
-- Checkout Success Page: Display a success message to the user after a successful checkout. Clear the cart and provide a link to return to the store.
+3. **Cart Page**: The cart page allows users to review the items they have added for purchase. It provides a summary of the selected products, including titles, prices, quantities, and a total amount. Users can modify the quantities or remove products from the cart if needed.
 
-- Contact Page: Include a contact form with fields for full name, subject, email, and body. Perform form validation with requirements for each field. Console log the form data when validation is met.
+4. **Checkout Success Page**: After successfully completing the checkout process, users are redirected to the checkout success page. This page confirms the order and displays a success message. Users can find relevant order details and a summary of the purchased products.
 
-- Layout Component: Use a Layout component that contains a header with a navigation bar and a Cart icon component. The Cart icon displays the current number of items in the cart and acts as a button.
+
+
 
 ## Technologies Used
 
